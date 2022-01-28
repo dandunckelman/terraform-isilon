@@ -1,4 +1,13 @@
 {
+  "data": {
+    "vcenter": {
+      "datacenter": "dc-3",
+      "datastore": "datastore-23",
+      "dvportgroup": "dvportgroup-3351",
+      "folder": "",
+      "resource_pool": "resgroup-38"
+    }
+  },
   "provider": {
     "vsphere": {
       "allow_unverified_ssl": true,

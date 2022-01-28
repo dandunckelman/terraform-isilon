@@ -2,10 +2,11 @@
   "data": {
     "vsphere_virtual_machine": {
       "isilon_template": {
-        "datacenter_id": "datacenter-3",
+        "datacenter_id": "${data.vcenter.datacenter_id}",
         "name": "Isilon 9.1.0.0",
         "scsi_controller_scan_count": 4
-      }
+      },
+      "ipv4_gateway": "172.16.5.1"
     }
   }
 }
