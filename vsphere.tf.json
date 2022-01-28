@@ -1,0 +1,22 @@
+{
+  "provider": {
+    "vsphere": {
+      "allow_unverified_ssl": true,
+      "password": "TechAccel1!",
+      "user": "administrator@vsphere.local",
+      "vsphere_server": "vcenter-01.talabs.local"
+    }
+  },
+  "terraform": {
+    "required_providers": {
+      "null": {
+        "source": "hashicorp/null",
+        "version": "3.1.0"
+      },
+      "vsphere": {
+        "source": "hashicorp/vsphere",
+        "version": "2.0.2"
+      }
+    }
+  }
+}
