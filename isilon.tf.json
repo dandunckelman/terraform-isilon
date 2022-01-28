@@ -18,7 +18,7 @@
           "linked_clone": true,
           "template_uuid": "${data.vsphere_virtual_machine.isilon_template.id}"
         },
-        "datastore_id": "${data.vcenter.datastore}",
+        "datastore_id": "${local.datastore}",
         "disk": [
           {
             "eagerly_scrub": "${data.vsphere_virtual_machine.isilon_template.disks.0.eagerly_scrub}",
@@ -176,7 +176,7 @@
           }
         ],
         "enable_logging": true,
-        "folder": "${data.vcenter.folder}",
+        "folder": "${local.folder}",
         "guest_id": "${data.vsphere_virtual_machine.isilon_template.guest_id}",
         "memory": 6144,
         "name": "isilon",
@@ -185,25 +185,25 @@
           {
             "adapter_type": "e1000",
             "mac_address": "00:50:56:a1:ec:a2",
-            "network_id": "${data.vcenter.dvportgroup}",
+            "network_id": "${local.dvportgroup}",
             "use_static_mac": true
           },
           {
             "adapter_type": "e1000",
             "mac_address": "00:50:56:a1:e3:a7",
-            "network_id": "${data.vcenter.dvportgroup}",
+            "network_id": "${local.dvportgroup}",
             "use_static_mac": true
           },
           {
             "adapter_type": "e1000",
             "mac_address": "00:50:56:a1:bf:e6",
-            "network_id": "${data.vcenter.dvportgroup}",
+            "network_id": "${local.dvportgroup}",
             "use_static_mac": true
           }
         ],
         "num_cores_per_socket": 2,
         "num_cpus": 2,
-        "resource_pool_id": "${data.vcenter.resource_pool}",
+        "resource_pool_id": "${local.resource_pool}",
         "scsi_controller_count": 4,
         "scsi_type": "${data.vsphere_virtual_machine.isilon_template.scsi_type}",
         "sync_time_with_host": true

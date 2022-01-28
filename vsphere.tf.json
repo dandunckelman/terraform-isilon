@@ -1,12 +1,11 @@
 {
-  "data": {
-    "vcenter": {
-      "datacenter": "dc-3",
-      "datastore": "datastore-23",
-      "dvportgroup": "dvportgroup-3351",
-      "folder": "",
-      "resource_pool": "resgroup-38"
-    }
+  "locals": {
+    "datacenter": "datacenter-3",
+    "datastore": "datastore-23",
+    "dvportgroup": "dvportgroup-3351",
+    "folder": "",
+    "ipv4_gateway": "172.16.5.1",
+    "resource_pool": "resgroup-38"
   },
   "provider": {
     "vsphere": {
