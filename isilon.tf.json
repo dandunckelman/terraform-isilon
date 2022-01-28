@@ -8,7 +8,7 @@
               "8.8.8.8",
               "8.8.4.4"
             ],
-            "ipv4_gateway": "${data.vsphere_virtual_machine.ipv4_gateway}",
+            "ipv4_gateway": "${local.ipv4_gateway}",
             "network_interface": [
               {},
               {},
