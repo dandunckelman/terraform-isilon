@@ -1,0 +1,213 @@
+{
+  "resource": {
+    "vsphere_virtual_machine": {
+      "isilon": {
+        "clone": {
+          "customize": {
+            "dns_server_list": [
+              "8.8.8.8",
+              "8.8.4.4"
+            ],
+            "ipv4_gateway": "172.16.5.1",
+            "network_interface": [
+              {},
+              {},
+              {}
+            ]
+          },
+          "linked_clone": true,
+          "template_uuid": "${data.vsphere_virtual_machine.isilon_template.id}"
+        },
+        "datastore_id": "datastore-23",
+        "disk": [
+          {
+            "eagerly_scrub": "${data.vsphere_virtual_machine.isilon_template.disks.0.eagerly_scrub}",
+            "label": "isilon_0.vmdk",
+            "size": "${data.vsphere_virtual_machine.isilon_template.disks.0.size}",
+            "thin_provisioned": "${data.vsphere_virtual_machine.isilon_template.disks.0.thin_provisioned}",
+            "unit_number": "0"
+          },
+          {
+            "eagerly_scrub": "${data.vsphere_virtual_machine.isilon_template.disks.1.eagerly_scrub}",
+            "label": "isilon_1.vmdk",
+            "size": "${data.vsphere_virtual_machine.isilon_template.disks.1.size}",
+            "thin_provisioned": "${data.vsphere_virtual_machine.isilon_template.disks.1.thin_provisioned}",
+            "unit_number": "1"
+          },
+          {
+            "eagerly_scrub": "${data.vsphere_virtual_machine.isilon_template.disks.2.eagerly_scrub}",
+            "label": "isilon_2.vmdk",
+            "size": "${data.vsphere_virtual_machine.isilon_template.disks.2.size}",
+            "thin_provisioned": "${data.vsphere_virtual_machine.isilon_template.disks.2.thin_provisioned}",
+            "unit_number": "2"
+          },
+          {
+            "eagerly_scrub": "${data.vsphere_virtual_machine.isilon_template.disks.3.eagerly_scrub}",
+            "label": "isilon_3.vmdk",
+            "size": "${data.vsphere_virtual_machine.isilon_template.disks.3.size}",
+            "thin_provisioned": "${data.vsphere_virtual_machine.isilon_template.disks.3.thin_provisioned}",
+            "unit_number": "3"
+          },
+          {
+            "eagerly_scrub": "${data.vsphere_virtual_machine.isilon_template.disks.4.eagerly_scrub}",
+            "label": "isilon_4.vmdk",
+            "size": "${data.vsphere_virtual_machine.isilon_template.disks.4.size}",
+            "thin_provisioned": "${data.vsphere_virtual_machine.isilon_template.disks.4.thin_provisioned}",
+            "unit_number": "4"
+          },
+          {
+            "eagerly_scrub": "${data.vsphere_virtual_machine.isilon_template.disks.5.eagerly_scrub}",
+            "label": "isilon_5.vmdk",
+            "size": "${data.vsphere_virtual_machine.isilon_template.disks.5.size}",
+            "thin_provisioned": "${data.vsphere_virtual_machine.isilon_template.disks.5.thin_provisioned}",
+            "unit_number": "5"
+          },
+          {
+            "eagerly_scrub": "${data.vsphere_virtual_machine.isilon_template.disks.6.eagerly_scrub}",
+            "label": "isilon_6.vmdk",
+            "size": "${data.vsphere_virtual_machine.isilon_template.disks.6.size}",
+            "thin_provisioned": "${data.vsphere_virtual_machine.isilon_template.disks.6.thin_provisioned}",
+            "unit_number": "6"
+          },
+          {
+            "eagerly_scrub": "${data.vsphere_virtual_machine.isilon_template.disks.7.eagerly_scrub}",
+            "label": "isilon_7.vmdk",
+            "size": "${data.vsphere_virtual_machine.isilon_template.disks.7.size}",
+            "thin_provisioned": "${data.vsphere_virtual_machine.isilon_template.disks.7.thin_provisioned}",
+            "unit_number": "7"
+          },
+          {
+            "eagerly_scrub": "${data.vsphere_virtual_machine.isilon_template.disks.8.eagerly_scrub}",
+            "label": "isilon_8.vmdk",
+            "size": "${data.vsphere_virtual_machine.isilon_template.disks.8.size}",
+            "thin_provisioned": "${data.vsphere_virtual_machine.isilon_template.disks.8.thin_provisioned}",
+            "unit_number": "8"
+          },
+          {
+            "eagerly_scrub": "${data.vsphere_virtual_machine.isilon_template.disks.9.eagerly_scrub}",
+            "label": "isilon_9.vmdk",
+            "size": "${data.vsphere_virtual_machine.isilon_template.disks.9.size}",
+            "thin_provisioned": "${data.vsphere_virtual_machine.isilon_template.disks.9.thin_provisioned}",
+            "unit_number": "9"
+          },
+          {
+            "eagerly_scrub": "${data.vsphere_virtual_machine.isilon_template.disks.10.eagerly_scrub}",
+            "label": "isilon_10.vmdk",
+            "size": "${data.vsphere_virtual_machine.isilon_template.disks.10.size}",
+            "thin_provisioned": "${data.vsphere_virtual_machine.isilon_template.disks.10.thin_provisioned}",
+            "unit_number": "10"
+          },
+          {
+            "eagerly_scrub": "${data.vsphere_virtual_machine.isilon_template.disks.11.eagerly_scrub}",
+            "label": "isilon_11.vmdk",
+            "size": "${data.vsphere_virtual_machine.isilon_template.disks.11.size}",
+            "thin_provisioned": "${data.vsphere_virtual_machine.isilon_template.disks.11.thin_provisioned}",
+            "unit_number": "11"
+          },
+          {
+            "eagerly_scrub": "${data.vsphere_virtual_machine.isilon_template.disks.12.eagerly_scrub}",
+            "label": "isilon_12.vmdk",
+            "size": "${data.vsphere_virtual_machine.isilon_template.disks.12.size}",
+            "thin_provisioned": "${data.vsphere_virtual_machine.isilon_template.disks.12.thin_provisioned}",
+            "unit_number": "12"
+          },
+          {
+            "eagerly_scrub": "${data.vsphere_virtual_machine.isilon_template.disks.13.eagerly_scrub}",
+            "label": "isilon_13.vmdk",
+            "size": "${data.vsphere_virtual_machine.isilon_template.disks.13.size}",
+            "thin_provisioned": "${data.vsphere_virtual_machine.isilon_template.disks.13.thin_provisioned}",
+            "unit_number": "13"
+          },
+          {
+            "eagerly_scrub": "${data.vsphere_virtual_machine.isilon_template.disks.14.eagerly_scrub}",
+            "label": "isilon_14.vmdk",
+            "size": "${data.vsphere_virtual_machine.isilon_template.disks.14.size}",
+            "thin_provisioned": "${data.vsphere_virtual_machine.isilon_template.disks.14.thin_provisioned}",
+            "unit_number": "14"
+          },
+          {
+            "eagerly_scrub": "${data.vsphere_virtual_machine.isilon_template.disks.15.eagerly_scrub}",
+            "label": "isilon_15.vmdk",
+            "size": "${data.vsphere_virtual_machine.isilon_template.disks.15.size}",
+            "thin_provisioned": "${data.vsphere_virtual_machine.isilon_template.disks.15.thin_provisioned}",
+            "unit_number": "15"
+          },
+          {
+            "eagerly_scrub": "${data.vsphere_virtual_machine.isilon_template.disks.16.eagerly_scrub}",
+            "label": "isilon_16.vmdk",
+            "size": "${data.vsphere_virtual_machine.isilon_template.disks.16.size}",
+            "thin_provisioned": "${data.vsphere_virtual_machine.isilon_template.disks.16.thin_provisioned}",
+            "unit_number": "16"
+          },
+          {
+            "eagerly_scrub": "${data.vsphere_virtual_machine.isilon_template.disks.17.eagerly_scrub}",
+            "label": "isilon_17.vmdk",
+            "size": "${data.vsphere_virtual_machine.isilon_template.disks.17.size}",
+            "thin_provisioned": "${data.vsphere_virtual_machine.isilon_template.disks.17.thin_provisioned}",
+            "unit_number": "17"
+          },
+          {
+            "eagerly_scrub": "${data.vsphere_virtual_machine.isilon_template.disks.18.eagerly_scrub}",
+            "label": "isilon_18.vmdk",
+            "size": "${data.vsphere_virtual_machine.isilon_template.disks.18.size}",
+            "thin_provisioned": "${data.vsphere_virtual_machine.isilon_template.disks.18.thin_provisioned}",
+            "unit_number": "18"
+          },
+          {
+            "eagerly_scrub": "${data.vsphere_virtual_machine.isilon_template.disks.19.eagerly_scrub}",
+            "label": "isilon_19.vmdk",
+            "size": "${data.vsphere_virtual_machine.isilon_template.disks.19.size}",
+            "thin_provisioned": "${data.vsphere_virtual_machine.isilon_template.disks.19.thin_provisioned}",
+            "unit_number": "19"
+          },
+          {
+            "eagerly_scrub": "${data.vsphere_virtual_machine.isilon_template.disks.20.eagerly_scrub}",
+            "label": "isilon_20.vmdk",
+            "size": "${data.vsphere_virtual_machine.isilon_template.disks.20.size}",
+            "thin_provisioned": "${data.vsphere_virtual_machine.isilon_template.disks.20.thin_provisioned}",
+            "unit_number": "20"
+          },
+          {
+            "eagerly_scrub": false,
+            "label": "isilon_21.vmdk",
+            "size": 4,
+            "thin_provisioned": true,
+            "unit_number": "21"
+          }
+        ],
+        "enable_logging": true,
+        "folder": "",
+        "guest_id": "${data.vsphere_virtual_machine.isilon_template.guest_id}",
+        "memory": 6144,
+        "name": "isilon",
+        "nested_hv_enabled": false,
+        "network_interface": [
+          {
+            "adapter_type": "e1000",
+            "mac_address": "00:50:56:a1:ec:a2",
+            "network_id": "dvportgroup-3351",
+            "use_static_mac": true
+          },
+          {
+            "adapter_type": "e1000",
+            "mac_address": "00:50:56:a1:e3:a7",
+            "network_id": "dvportgroup-3351",
+            "use_static_mac": true
+          },
+          {
+            "adapter_type": "e1000",
+            "mac_address": "00:50:56:a1:bf:e6",
+            "network_id": "dvportgroup-3351",
+            "use_static_mac": true
+          }
+        ],
+        "num_cores_per_socket": 2,
+        "num_cpus": 2,
+        "resource_pool_id": "resgroup-38",
+        "scsi_controller_count": 4,
+        "scsi_type": "${data.vsphere_virtual_machine.isilon_template.scsi_type}",
+        "sync_time_with_host": true
+      }
+    }
+  }
+}
