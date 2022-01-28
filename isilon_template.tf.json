@@ -1,0 +1,11 @@
+{
+  "data": {
+    "vsphere_virtual_machine": {
+      "isilon_template": {
+        "datacenter_id": "datacenter-2",
+        "name": "Isilon 9.1.0.0",
+        "scsi_controller_scan_count": 4
+      }
+    }
+  }
+}
